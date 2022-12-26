@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="666ce671-463b-4ba8-811e-eefa73af0800" name="Changes" comment="Configured Dev enviro">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="666ce671-463b-4ba8-811e-eefa73af0800" name="Changes" comment="Configured Dev enviro" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672013464990</updated>
       <workItem from="1672013466597" duration="7820000" />
-      <workItem from="1672032286085" duration="2708000" />
+      <workItem from="1672032286085" duration="3079000" />
     </task>
     <task id="LOCAL-00001" summary="Configured Dev enviro">
       <created>1672034758278</created>

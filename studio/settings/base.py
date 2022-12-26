@@ -160,5 +160,8 @@ WAGTAILSEARCH_BACKENDS = {
 WAGTAILADMIN_BASE_URL = "https://art.fosho.org"
 
 # Security things
-CSRF_TRUSTED_ORIGINS = ["king-prawn-app-n4d8w.ondigitalocean.app", "art.fosho.org",
-                        "127.0.0.1", "localhost", ]
+CSRF_TRUSTED_ORIGINS = ["https://king-prawn-app-n4d8w.ondigitalocean.app",
+                        "https://art.fosho.org",
+                        "http://127.0.0.1", "http://localhost", ]
+
+CSRF_COOKIE_DOMAIN = ".fosho.org"
