@@ -1,4 +1,5 @@
 from .base import *
+import dotenv
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -14,6 +15,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 
 try:
-    from .local import *
+    dotenv.read_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
 except ImportError:
     pass

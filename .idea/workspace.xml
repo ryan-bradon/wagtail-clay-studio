@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="666ce671-463b-4ba8-811e-eefa73af0800" name="Changes" comment="Configured Dev enviro" />
+    <list default="true" id="666ce671-463b-4ba8-811e-eefa73af0800" name="Changes" comment="Configured Dev enviro">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/studio/settings/dev.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +31,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/ryan.bradon/Desktop/django_sites/wagtail-clay-studio",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
   }
 }]]></component>
   <component name="PyConsoleOptionsProvider">
@@ -73,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672013464990</updated>
       <workItem from="1672013466597" duration="7820000" />
-      <workItem from="1672032286085" duration="3079000" />
+      <workItem from="1672032286085" duration="4052000" />
     </task>
     <task id="LOCAL-00001" summary="Configured Dev enviro">
       <created>1672034758278</created>
