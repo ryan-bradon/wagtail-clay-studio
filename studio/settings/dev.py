@@ -1,5 +1,7 @@
 from .base import *
-import dotenv
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -13,8 +15,11 @@ ALLOWED_HOSTS = ["king-prawn-app-n4d8w.ondigitalocean.app", "art.fosho.org",
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-
-try:
-    dotenv.read_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
-except ImportError:
-    pass
+if not DEBUG:
+    SECURE_HSTS_SECONDS = 60
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_REFERRER_POLICY = 'same-origin'
+    SECURE_HSTS_PRELOAD = True
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True

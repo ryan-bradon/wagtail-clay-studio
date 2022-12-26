@@ -1,11 +1,11 @@
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.core.management.utils import get_random_secret_key
 import os
 
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 # Application definition
-
 INSTALLED_APPS = [
     "home",
     "search",
@@ -67,8 +67,6 @@ WSGI_APPLICATION = "studio.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 try:
-    import os
-
     DATABASES = {
         "default": {
             "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
@@ -77,18 +75,14 @@ try:
             "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
             "HOST": os.environ.get("SQL_HOST", "localhost"),
             "PORT": os.environ.get("SQL_PORT", "5432"),
-        }
+        },
+        "development": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        },
     }
-except KeyError as e:
+except ImportError as e:
     print("dot env can't get the vars.")
-
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
