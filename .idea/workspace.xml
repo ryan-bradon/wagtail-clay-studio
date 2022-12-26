@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="666ce671-463b-4ba8-811e-eefa73af0800" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wagtail-clay-studio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wagtail-clay-studio.iml" afterDir="false" />
+    <list default="true" id="666ce671-463b-4ba8-811e-eefa73af0800" name="Changes" comment="Configured Dev enviro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/studio/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/studio/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/studio/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +30,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/ryan.bradon/Desktop/django_sites/wagtail-clay-studio",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="PyConsoleOptionsProvider">
@@ -85,8 +76,16 @@
       <option name="presentableId" value="Default" />
       <updated>1672013464990</updated>
       <workItem from="1672013466597" duration="7820000" />
-      <workItem from="1672032286085" duration="2167000" />
+      <workItem from="1672032286085" duration="2708000" />
     </task>
+    <task id="LOCAL-00001" summary="Configured Dev enviro">
+      <created>1672034758278</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672034758278</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Configured Dev enviro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured Dev enviro" />
   </component>
 </project>
