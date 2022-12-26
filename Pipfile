@@ -6,8 +6,8 @@ name = "pypi"
 [packages]
 django = "<4.2,>=4.1"
 wagtail = "<4.2,>=4.1"
-draftjs-exporter = "==5.0.0"
-charset-normalizer = "==3.0.1"
+psycopg2-binary = "*"
+django-dotenv = "*"
 
 [dev-packages]
 

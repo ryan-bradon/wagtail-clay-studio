@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+!/.gitignore
+
+Pipfile
+Pipfile.lock

@@ -63,12 +63,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "studio.wsgi.application"
 
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 try:
     import os
+
     DATABASES = {
         "default": {
             "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
@@ -81,7 +81,6 @@ try:
     }
 except KeyError as e:
     print("dot env can't get the vars.")
-
 
 # DATABASES = {
 #     "default": {
@@ -109,7 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
@@ -122,7 +120,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -147,10 +144,8 @@ STATIC_URL = "/static/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 
-
 # Wagtail settings
-
-WAGTAIL_SITE_NAME = "studio"
+WAGTAIL_SITE_NAME = "Studio Fosho"
 
 # Search
 # https://docs.wagtail.org/en/stable/topics/search/backends.html
@@ -163,3 +158,7 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 WAGTAILADMIN_BASE_URL = "https://art.fosho.org"
+
+# Security things
+CSRF_TRUSTED_ORIGINS = ["king-prawn-app-n4d8w.ondigitalocean.app", "art.fosho.org",
+                        "127.0.0.1", "localhost", ]
